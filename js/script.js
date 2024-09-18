@@ -20,9 +20,9 @@ function iniciaJogo() {
     atual = 0;
     historiaFinal = "";
     telaInicial.style.display = nome;
-    caixaPerguntas.classList.remove("mostrar);
-    caixaAlternativas.classList.remove("mostrar);                           
-    caixaResultado.classList.remove("mostrar);
+    caixaPerguntas.classList.remove("mostrar");
+    caixaAlternativas.classList.remove("mostrar");                           
+    caixaResultado.classList.remove("mostrar");
     mostrarPergunta();
                                     }                           
                                     
@@ -62,9 +62,9 @@ function mostraResultado(){
 }
 function jogarNovamente(){
     atual=0
-    historiaFinal = "":
+    historiaFinal = "";
    caixaResultado.classList.remove("mostrar")
-    mostrarPergunta();
+    mostraPergunta();
 }
 
 function substituiNome() {
@@ -72,6 +72,5 @@ function substituiNome() {
         pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
     }
 }
+
 substituiNome();
-
-
