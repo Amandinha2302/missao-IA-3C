@@ -8,7 +8,7 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const botaoJogarNovamente = document.querySelector(".novamente-btn");
 const telaInicial = document.querySelector(".tela-inicial");
-const botaoIniciar = document.querySelector(".iniciar-bnt");
+const botaoIniciar = document.querySelector(".iniciar-btn");
 
 let atual = 0; 
 let perguntaAtual;
@@ -24,7 +24,7 @@ function iniciaJogo() {
     caixaAlternativas.classList.remove("mostrar");                           
     caixaResultado.classList.remove("mostrar");
     mostrarPergunta();
-                                    }                           
+}                           
                                     
 function mostraPergunta() {
     if(atual >= perguntas.length){
