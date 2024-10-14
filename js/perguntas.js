@@ -1,57 +1,93 @@
 export const perguntas = [
     {
-        enunciado: "você quer descobrir qual mamíferos é conhecido por ser o maior animal do planeta?",
+        enunciado: "Qual desses mamíferos é conhecido por sua inteligência e habilidades sociais?",
         alternativas: [
             {
-                texto: "Baleia-azul",
+                texto: "Golfinho",
                 afirmacao: [
-                    " A baleia-azul pode atingir até 30 metros de comprimento e pesar até 200 toneladas, tornando-se o maior animal conhecido na Terra.",
+                    "Os Golfinhos é conhecido por sua comunicação complexa e comportamento social.",
                 ],
                 proxima: 1, 
             },
             {
-                texto: "Elefante-africano:",
+                texto: "Tatu",
                 afirmacao: [
-                    " Embora o elefante-africano seja o maior mamífero terrestre, a baleia-azul é o maior animal em geral, tanto terrestre quanto aquático.",
+                    "O Tatu geralmente é solitário e tem habilidades limitadas de interação social.",
                 ],
                 proxima: 1, 
             },             
         ],
     },
     {
-        enunciado: "Agora você quer saber qual dos qual dos seguintes mamíferos é conhecido por suas habilidades extraordinárias de camuflagem e adaptação ao ambiente?",
+        enunciado: "Agora você quer saber qual dos qual dos seguintes mamíferos é famoso por sua velocidade?",
         alternativas: [
             {
-                texto:"Tigre",
+                texto:"Guepardo",
                 afirmacao: [
-                    "Lince",
+                    "O Guepardo é o animal terrestre mais rápido, atingindo até 120 km/h.",
                 ],
                 proxima: 2, 
             },
             {
-                texto: "Lince",
+                texto: "Elefante",
                 afirmacao: [
-                    "afirmacao 1",
+                    "O Elefante por ser grande ele não é rápido, mas sua força é grandiosa.",
                 ],
                 proxima: 2, 
             },
         ],
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Qual mamífero é famoso por seu instinto migratório?",
         alternativas: [
             {
-                texto:"Alternativa 1 da pergunta 3",
+                texto:"Baleia",
                 afirmacao: [
-                    "afirmacao 1",
+                    "As Baleias viajam milhares de quilômetros anualmente em busca de alimento e reprodução.",
+                ],
+                proxima: 3,
+            },
+            {
+                texto:"Rato",
+                afirmacao: [
+                    "Os Ratos geralmente não migram, vivendo em áreas próximas ao seu habitat.",
+                ],
+                proxima: 3,
+            },  
+        ],
+    },
+    {
+        enunciado: "Qual desses mamíferos é conhecido por sua longa gestação?",
+        alternativas: [
+            {
+                texto: "Elefante",
+                afirmacao: [
+                    "O Elefante tem uma das gestações mais longas, de cerca de 22 meses."
                 ],
             },
             {
-                texto:"Alternativa 2 da pergunta 3",
+                texto: "Cão",
                 afirmacao: [
-                    "afirmacao 1",
+                    "A gestação do Cão dura cerca de 63 dias, sendo mais curta do elefante."
                 ],
-            },  
+            },
+        ],
+    },  
+    {
+        enunciado: "Qual mamífero é famoso por sua habilidade de escalar?",
+        alternativas: [
+            {
+                texto: "Macaco",
+                afirmacao: [
+                    "O Macaco é especializado em escalar árvores e se mover entre os galhos."
+                ],
+            },
+            {
+                texto: "Coelho",
+                afirmacao: [
+                    "Embora o Coelho salte bem, não é conhecido por escalar igual os macacos."
+                ],
+            },
         ],
     },
 ];
