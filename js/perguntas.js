@@ -16,7 +16,7 @@ export const perguntas = [
                 ],
                 proxima: 1, 
             },             
-        ],
+        ]
     },
     {
         enunciado: "Agora você quer saber qual dos qual dos seguintes mamíferos é famoso por sua velocidade?",
@@ -35,7 +35,7 @@ export const perguntas = [
                 ],
                 proxima: 2, 
             },
-        ],
+        ]
     },
     {
         enunciado: "Qual mamífero é famoso por seu instinto migratório?",
@@ -54,7 +54,7 @@ export const perguntas = [
                 ],
                 proxima: 3,
             },  
-        ],
+        ]
     },
     {
         enunciado: "Qual desses mamíferos é conhecido por sua longa gestação?",
@@ -64,14 +64,16 @@ export const perguntas = [
                 afirmacao: [
                     "O Elefante tem uma das gestações mais longas, de cerca de 22 meses."
                 ],
+                proxima: 4,
             },
             {
                 texto: "Cão",
                 afirmacao: [
                     "A gestação do Cão dura cerca de 63 dias, sendo mais curta do elefante."
                 ],
+                proxima: 4,
             },
-        ],
+        ]
     },  
     {
         enunciado: "Qual mamífero é famoso por sua habilidade de escalar?",
@@ -80,14 +82,14 @@ export const perguntas = [
                 texto: "Macaco",
                 afirmacao: [
                     "O Macaco é especializado em escalar árvores e se mover entre os galhos."
-                ],
+                ]
             },
             {
                 texto: "Coelho",
                 afirmacao: [
                     "Embora o Coelho salte bem, não é conhecido por escalar igual os macacos."
-                ],
+                ]
             },
-        ],
-    },
+        ]
+    }
 ];
