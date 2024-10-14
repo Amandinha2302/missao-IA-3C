@@ -26,12 +26,14 @@ export const perguntas = [
                 afirmacao: [
                     "Lince",
                 ],
+                proxima: 2, 
             },
             {
                 texto: "Lince",
                 afirmacao: [
                     "afirmacao 1",
                 ],
+                proxima: 2, 
             },
         ],
     },
