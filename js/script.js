@@ -58,16 +58,16 @@ function respostaSelecionada(opcaoSelecionada){
      mostraPergunta();
 }
 function mostraResultado(){
-    caixaPerguntas.textContent = `Em 2049, ${nome}`
+    caixaPerguntas.textContent = `Após o quiz, ${nome} descobriu que`;
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
-    caixaResultado.classList.remove("mostrar")
-    botaoJogarNovamente.addEventListener("click, jogarNovamente()");
+    caixaResultado.classList.add("mostrar");
+    botaoJogarNovamente.addEventListener("click", jogarNovamente);
 }
 function jogarNovamente(){
-    atual=0
+    atual= 0;
     historiaFinal = "";
-   caixaResultado.classList.remove("mostrar")
+    caixaResultado.classList.remove("mostrar");
     mostraPergunta();
 }
 
