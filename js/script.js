@@ -8,7 +8,7 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const botaoJogarNovamente = document.querySelector(".texto-resultado");
 const telaInicial = document.querySelector(".tela-inicial");
-const botaoIniciar = document.Selector(".iniciar-bnt");
+const botaoIniciar = document.querySelector(".iniciar-bnt");
 
 let atual = 0; 
 let perguntaAtual;
