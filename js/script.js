@@ -6,9 +6,9 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-const botaoJogarNovamente = document.querySelector(".novamente-btn");
-const telaInicial = document.querySelector(".tela-inicial");
+const botaoJogarNovamente = document.querySelector(".novamente-btn"); 
 const botaoIniciar = document.querySelector(".iniciar-btn");
+const telaInicial = document.querySelector(".tela-inicial");
 
 let atual = 0; 
 let perguntaAtual;
@@ -21,11 +21,11 @@ function iniciaJogo() {
     historiaFinal = "";
     telaInicial.style.display = 'none';
     caixaPerguntas.classList.remove("mostrar");
-    caixaAlternativas.classList.remove("mostrar");                           
+    caixaAlternativas.classList.remove("mostrar");
     caixaResultado.classList.remove("mostrar");
-    mostrarPergunta();
-}                           
-                                    
+    mostraPergunta();
+}
+
 function mostraPergunta() {
     if(atual >= perguntas.length){
         mostraResultado();
@@ -49,25 +49,27 @@ function mostraAlternativas(){
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + " ";
-    if(opcaoSelecionada.proxima !== undefined) {
+   if(opcaoSelecionada.proxima !== undefined) {
        atual = opcaoSelecionada.proxima;
-    }else {
+   }else {
+       mostraResultado();
+       return;
+   }
     mostraPergunta();
-        return;
 }
-     mostraPergunta();
-}
+
 function mostraResultado(){
-    caixaPerguntas.textContent = `Após o quiz, ${nome} descobriu que`;
+    caixaPerguntas.textContent = `Após os estudos, ${nome} descobriu que`;
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = ""; 
-    caixaResultado.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click", jogarNovamente);
+    caixaAlternativas.textContent = "";
+    caixaResultado.classList.add("mostrar"); 
+    botaoJogarNovamente.addEventListener("click", jogarNovamente); 
 }
+
 function jogarNovamente(){
-    atual= 0;
+    atual = 0;
     historiaFinal = "";
-    caixaResultado.classList.remove("mostrar");
+    caixaResultado.classList.remove("mostrar"); 
     mostraPergunta();
 }
 
@@ -76,5 +78,5 @@ function substituiNome() {
         pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
     }
 }
-
 substituiNome();
+
